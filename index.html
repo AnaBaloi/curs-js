@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Training</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function createMessage(workDuration, companyName)
+        {
+            var msg = 'Eu sunt angajata de ' + workDuration + ' ' + (workDuration > 1 ? 'ani' : 'an') + ' in ' + companyName + '!';
+            return msg;
+        }
+
+        var firstName = 'Ana';
+        var lastName = 'Baloi';
+        console.log (firstName);
+        console.log (lastName);
+        console.log (firstName + ' ' + lastName);
+
+        var cityName = 'Brasov';
+        console.log ('Numele meu este ' + firstName + ' ' + lastName + ' si sunt din ' + cityName + '!');
+
+        var company = 'Projects Abroad';
+        var workDuration = 2;
+
+        var age = 15;
+        var isMajor = age > 18 ? 'yes' : 'no';
+        console.log (isMajor);
+
+        // exemplul de mai jos a fost facut dupa cel de sus cu var age = 15;
+        console.log ('Eu sunt angajata de ' + workDuration + ' ' + (workDuration > 1 ? 'ani' : 'an') + ' in ' + company + '!');
+
+        var gender = 'F';
+
+        console.log ('Eu sunt ' + (gender == 'F' ? 'femeie' : 'barbat'));
+        //  gender == 'F' -> compara (daca e F sau nu)
+        //  gender = 'F' -> verifica daca gender este egal cu F
+
+        var workDuration = 1;
+        console.log ('Eu sunt angajata de ' + workDuration + ' ' + (workDuration > 1 ? 'ani' : 'an') + ' in ' + company + '!');
+
+       var message = createMessage(workDuration, company);
+        console.log (message);
+
+        workDuration = workDuration + 1;
+        // sau pot scrie workDuration++;
+        /* EXEMPLU COMENTAT
+           console.log (workDuration++); -> aici incrementeaza cu 1 (afiseaza: 2)
+           console.log (workDuration); -> aici afiseaza rezultatul anterior dar din nou incrementat (afiseaza: 3)*/
+
+        var message = createMessage(workDuration, company);
+        console.log ('Eu sunt angajata de ' + workDuration + ' ' + (workDuration > 1 ? 'ani' : 'an') + ' in ' + company + '!');
+
+
+    </script>
+</body>
+</html>
